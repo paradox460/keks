@@ -1,0 +1,3 @@
+require './keks'
+
+run Keks
