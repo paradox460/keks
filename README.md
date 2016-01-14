@@ -2,6 +2,19 @@
 
 A dumb sinatra app thats dumb
 
+## Usage
+
+```
+GET /(AMOUNT)(.json)
+```
+Returns `AMOUNT` keks, optionally in JSON format. If `AMOUNT` is omitted, returns a random number of keks
+
+```
+GET /stream
+```
+
+Returns a never-ending stream of keks, with line-breaks.
+
 ## License
 ```
 Copyright (c) 2016 Jeff Sandberg
