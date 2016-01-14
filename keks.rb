@@ -3,10 +3,10 @@ require 'json'
 
 class Keks < Sinatra::Base
   get %r{/stream} do
-  content_type :txt
-  stream do |out|
-    loop { out << "kek\n" }
-  end
+    content_type :txt
+    stream do |out|
+      loop { out << "kek\n" }
+    end
   end
 
   get %r{/(\d+)(\.json)?} do |amount, json|
